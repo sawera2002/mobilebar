@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AppPage } from '../types';
-import { Wine, CalendarCheck, Sparkles, Layers, Menu, X, PhoneCall } from 'lucide-react';
+import { Wine, CalendarCheck, Sparkles, Layers, Menu, X, PhoneCall, ShieldCheck } from 'lucide-react';
 
 interface NavbarProps {
   currentPage: AppPage;
@@ -93,6 +93,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
               <CalendarCheck className="w-4 h-4 stroke-[2.5]" />
               <span>Book Your Event</span>
             </button>
+
+            <button
+              id="nav-admin-link-btn"
+              onClick={() => handleSelectPage('admin')}
+              title="Admin Portal (/admin)"
+              className={`p-2.5 rounded-xl border transition-all text-xs flex items-center gap-1.5 focus:outline-none ${
+                currentPage === 'admin'
+                  ? 'bg-[#18181b] border-[#f472b6] text-[#f472b6]'
+                  : 'border-zinc-800 bg-zinc-900/40 text-zinc-400 hover:text-white hover:border-zinc-700'
+              }`}
+            >
+              <ShieldCheck className="w-4 h-4 text-[#f472b6]" />
+              <span className="hidden xl:inline font-mono text-[11px]">Admin</span>
+            </button>
           </div>
 
           {/* Mobile Menu Toggle & Direct Book CTA */}
@@ -143,13 +157,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             })}
           </div>
 
-          <div className="pt-4 mt-2 border-t border-[#27272a]">
+          <div className="pt-4 mt-2 border-t border-[#27272a] space-y-2">
             <button
               onClick={() => handleSelectPage('booking')}
               className="w-full py-3 rounded-xl bg-gradient-to-r from-[#f472b6] to-[#ec4899] text-[#09090b] text-xs font-bold uppercase tracking-wider shadow-lg shadow-[#f472b6]/20 flex items-center justify-center gap-2"
             >
               <CalendarCheck className="w-4 h-4" />
               <span>Book Your Event</span>
+            </button>
+            <button
+              onClick={() => handleSelectPage('admin')}
+              className="w-full py-2.5 rounded-xl border border-zinc-800 bg-zinc-900/60 text-zinc-300 hover:text-[#f472b6] text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors"
+            >
+              <ShieldCheck className="w-4 h-4 text-[#f472b6]" />
+              <span>Admin Portal</span>
             </button>
           </div>
         </div>
