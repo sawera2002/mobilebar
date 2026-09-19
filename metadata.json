@@ -1,0 +1,6 @@
+{
+  "name": "Cosmo Mobile Bar",
+  "description": "Luxury black & baby pink mobile cocktail bar catering for weddings, private estates, and luxury galas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

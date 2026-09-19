@@ -1,0 +1,40 @@
+[
+  {
+    "id": "bk-1789796186435",
+    "referenceCode": "CMB-6963",
+    "createdAt": "2026-09-19",
+    "status": "confirmed",
+    "clientName": "Ehtisham khalid",
+    "clientEmail": "ehtishamarain567@gmail.com",
+    "clientPhone": "03142033354",
+    "isPlanner": false,
+    "eventType": "Anniversary Celebration",
+    "eventDate": "2026-11-22",
+    "eventTime": "16:00",
+    "eventDurationHours": 4,
+    "guestCount": 100,
+    "venueName": "Private Venue",
+    "venueCity": "rd",
+    "isOutdoor": true,
+    "packageId": "pkg-pink-velvet",
+    "packageName": "The Pink Velvet Soirée",
+    "barSetupId": "setup-vintage-trailer",
+    "barSetupName": "The Onyx & Rose Vintage Horse Trailer",
+    "selectedCocktailIds": [
+      "cocktail-cosmo-2",
+      "cocktail-blush-spritz",
+      "cocktail-smoked-paloma"
+    ],
+    "selectedAddOnIds": [
+      "addon-champagne-tower"
+    ],
+    "basePrice": 1650,
+    "addOnsPrice": 350,
+    "travelFee": 80,
+    "taxAmount": 171.6,
+    "totalAmount": 2251.6,
+    "depositPaid": 0,
+    "depositStatus": "Unpaid",
+    "synced_to_supabase": true
+  }
+]
